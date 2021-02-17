@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "336389995497",
+    "project_id": "pangansehat-cc338",
+    "storage_bucket": "pangansehat-cc338.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336389995497:android:21243544cd3424d1abe978",
+        "android_client_info": {
+          "package_name": "com.blogspot.yourfavoritekaisar.pangansehat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "336389995497-7djt7145bml8oairhgncd0c952t3jiru.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5BfNGz7OH5Je7TW8YgXMYq2y6xYcaPDg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "336389995497-7djt7145bml8oairhgncd0c952t3jiru.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
