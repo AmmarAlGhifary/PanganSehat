@@ -37,28 +37,98 @@
         tools:layout_editor_absoluteY="135dp" >
 
         <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="-120dp">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_judul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp32"
+                android:layout_marginTop="@dimen/dp22"
+                android:textStyle="bold"
+                android:text="Create \nAccount"
+                android:textColor="#2d2d2d"
+                android:textSize="40sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tv_judul"
+                android:orientation="vertical"
+                android:padding="@dimen/dp32">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edt_signup_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:met_floatingLabel="highlight"
+                    android:textColorHighlight="#BABABA"
+                    app:met_primaryColor="#1DC879"
+                    android:hint="@string/username"/>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edt_signup_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:met_floatingLabel="highlight"
+                    android:textColorHighlight="#BABABA"
+                    app:met_primaryColor="#1DC879"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"/>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edt_signup_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:met_floatingLabel="highlight"
+                    android:textColorHighlight="#BABABA"
+                    app:met_primaryColor="#1DC879"
+                    android:hint="@string/mobile_optional"
+                    android:inputType="number"/>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edt_signup_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:met_floatingLabel="highlight"
+                    android:textColorHighlight="#BABABA"
+                    app:met_primaryColor="#1DC879"
+                    android:hint="@string/password" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginTop="14dp"
+                    android:backgroundTint="#1DC879"
+                    android:text="@string/sign_up"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp32"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Already have an account?"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp4"
+                        android:textColor="#1DC879"
+                        android:text="Go to login"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
 
 
         </RelativeLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:lineHeight="20dp"
-            android:text="@string/welcome"
-            android:textAlignment="center"
-            android:textColor="#2d2d2d"
-            android:textSize="40dp" />
-
-
     </androidx.cardview.widget.CardView>
-
-
-
-
-
 </RelativeLayout>
