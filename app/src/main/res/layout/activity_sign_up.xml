@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUpActivity"
+    tools:context=".ui.SignUpActivity"
     android:orientation="vertical">
 
     <!-- Rectangle 160 -->
@@ -24,7 +24,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/rectangle_1"
         android:layout_width="match_parent"
-        android:layout_height="550dp"
+        android:layout_height="match_parent"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
@@ -59,7 +59,7 @@
                 android:padding="@dimen/dp32">
 
                 <com.rengwuxian.materialedittext.MaterialEditText
-                    android:id="@+id/edt_signup_username"
+                    android:id="@+id/edt_username"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:met_floatingLabel="highlight"
@@ -68,7 +68,7 @@
                     android:hint="@string/username"/>
 
                 <com.rengwuxian.materialedittext.MaterialEditText
-                    android:id="@+id/edt_signup_email"
+                    android:id="@+id/edt_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:met_floatingLabel="highlight"
@@ -78,7 +78,7 @@
                     android:inputType="textEmailAddress"/>
 
                 <com.rengwuxian.materialedittext.MaterialEditText
-                    android:id="@+id/edt_signup_mobile"
+                    android:id="@+id/edt_mobile"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:met_floatingLabel="highlight"
@@ -88,7 +88,7 @@
                     android:inputType="number"/>
 
                 <com.rengwuxian.materialedittext.MaterialEditText
-                    android:id="@+id/edt_signup_password"
+                    android:id="@+id/edt_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:met_floatingLabel="highlight"
@@ -96,14 +96,17 @@
                     app:met_primaryColor="#1DC879"
                     android:hint="@string/password" />
 
-                <Button
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_signup"
                     android:layout_width="match_parent"
                     android:layout_height="58dp"
                     android:layout_marginTop="14dp"
                     android:backgroundTint="#1DC879"
+                    style="@style/TextAppearance.MaterialComponents.Button"
                     android:text="@string/sign_up"
                     android:textAllCaps="false"
-                    android:textStyle="bold"/>
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -112,17 +115,18 @@
                     android:gravity="center"
                     android:orientation="horizontal">
 
-                    <TextView
+                    <com.google.android.material.textview.MaterialTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Already have an account?"/>
+                        android:text="@string/txt_acc_empty2" />
 
-                    <TextView
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txt_login"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/dp4"
                         android:textColor="#1DC879"
-                        android:text="Go to login"/>
+                        android:text="@string/txt_click2" />
 
                 </LinearLayout>
 
@@ -131,4 +135,19 @@
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/progress_layout_signup"
+        style="@style/ProgressLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
 </RelativeLayout>

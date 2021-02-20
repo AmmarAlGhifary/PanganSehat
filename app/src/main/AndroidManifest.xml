@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.blogspot.yourfavoritekaisar.pangansehat">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,8 +11,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PanganSehat">
-        <activity android:name=".SignUpActivity"></activity>
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".ui.SignUpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SingUpNoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SingUpNoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar"
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

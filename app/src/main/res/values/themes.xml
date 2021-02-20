@@ -13,4 +13,18 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="SingUpNoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar" />
+
+    <!--    region progress bar-->
+    <style name="ProgressLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/cardview_shadow_end_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    <!--    end region-->
+
 </resources>

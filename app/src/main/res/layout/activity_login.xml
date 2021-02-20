@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".ui.LoginActivity">
 
+    <!-- Rectangle 160 -->
     <!-- Rectangle 160 -->
     <View
         android:id="@+id/background"
@@ -24,7 +25,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/rectangle_1"
         android:layout_width="match_parent"
-        android:layout_height="550dp"
+        android:layout_height="match_parent"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
@@ -34,39 +35,103 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="135dp" >
+        tools:layout_editor_absoluteY="135dp">
 
         <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="-120dp">
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/fuckyou"
-                android:layout_width="175dp"
-                android:layout_height="164dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="64dp"
-                android:scaleType="fitCenter"
+                android:id="@+id/tv_judul"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="33dp"
+                android:layout_marginEnd="25dp"
                 android:src="@drawable/logo"
-                tools:ignore="ContentDescription" />
+                android:contentDescription="@string/logo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tv_judul"
+                android:orientation="vertical"
+                android:padding="@dimen/dp32">
+
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:textColorHighlight="#BABABA"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="#1DC879" />
+
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edt_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password"
+                    android:textColorHighlight="#BABABA"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="#1DC879" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_login"
+                    style="@style/TextAppearance.MaterialComponents.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginTop="14dp"
+                    android:backgroundTint="#1DC879"
+                    android:text="@string/login"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp32"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_acc_empty" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txt_singup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp4"
+                        android:text="@string/txt_clickable"
+                        android:textColor="#1DC879" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
         </RelativeLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:lineHeight="20dp"
-            android:text="@string/welcome"
-            android:textAlignment="center"
-            android:textColor="#2d2d2d"
-            android:textSize="40dp" />
-
-
     </androidx.cardview.widget.CardView>
 
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/progress_layout"
+        style="@style/ProgressLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
-
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
 </RelativeLayout>

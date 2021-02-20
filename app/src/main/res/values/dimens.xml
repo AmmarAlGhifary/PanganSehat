@@ -3,4 +3,5 @@
     <dimen name="dp32">32dp</dimen>
     <dimen name="dp22">22dp</dimen>
     <dimen name="dp4">4dp</dimen>
+    <dimen name="dp60">60dp</dimen>
 </resources>

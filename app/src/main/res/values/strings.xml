@@ -2,10 +2,19 @@
     <string name="app_name">PanganSehat</string>
     <string name="welcome">Welcome to Pangan Sehat</string>
     <string name="sign_up">Sign Up</string>
+    <string name="login">Login</string>
+
     <string name="username">Username</string>
     <string name="email">Email</string>
     <string name="mobile_optional">Mobile (optional)</string>
     <string name="password">Password</string>
+
+    <string name="txt_clickable">Sign Up</string>
+    <string name="txt_click2">Go to login</string>
+
+    <string name="txt_acc_empty">Dont Have An Account?</string>
+    <string name="txt_acc_empty2">Already Have An Account?</string>
+    <string name="logo">logo</string>
 
 
 </resources>
