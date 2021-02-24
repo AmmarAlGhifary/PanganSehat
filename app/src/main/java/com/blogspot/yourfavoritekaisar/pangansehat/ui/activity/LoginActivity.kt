@@ -1,4 +1,4 @@
-package com.blogspot.yourfavoritekaisar.pangansehat.ui
+package com.blogspot.yourfavoritekaisar.pangansehat.ui.activity
 
 import android.annotation.SuppressLint
 import android.content.Intent

@@ -11,9 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PanganSehat">
-        <activity android:name=".ui.HomeActivity"></activity>
         <activity
-            android:name=".ui.SplashActivity"
+            android:name=".ui.activity.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/SingUpNoActionBar"
             android:windowSoftInputMode="adjustResize">
@@ -24,17 +23,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.SignUpActivity"
+            android:name=".ui.activity.SignUpActivity"
             android:screenOrientation="portrait"
             android:theme="@style/SingUpNoActionBar"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".ui.activity.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/SingUpNoActionBar"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".ui.LoginActivity"
+            android:name=".ui.activity.LoginActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
             android:windowSoftInputMode="adjustResize" />

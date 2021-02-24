@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.LoginActivity">
+    tools:context=".ui.activity.LoginActivity">
 
     <!-- Rectangle 160 -->
     <!-- Rectangle 160 -->
@@ -83,10 +83,10 @@
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_login"
-                    style="@style/TextAppearance.MaterialComponents.Button"
                     android:layout_width="match_parent"
                     android:layout_height="58dp"
                     android:layout_marginTop="14dp"
+                    app:cornerRadius="20dp"
                     android:backgroundTint="#1DC879"
                     android:text="@string/login"
                     android:textAllCaps="false"

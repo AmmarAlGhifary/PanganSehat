@@ -1,4 +1,4 @@
-package com.blogspot.yourfavoritekaisar.pangansehat.ui
+package com.blogspot.yourfavoritekaisar.pangansehat.ui.activity
 
 import android.content.Intent
 import android.os.Bundle
