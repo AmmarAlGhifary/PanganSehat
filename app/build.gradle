@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId "com.blogspot.yourfavoritekaisar.pangansehat"
-        minSdkVersion 22
+        minSdkVersion 23
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -64,4 +64,10 @@ dependencies {
 
     //Material EditText
     implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+
+    // Chip Navigation Bar
+    implementation 'com.ismaeldivita.chipnavigation:chip-navigation-bar:1.3.4'
+
+    // Material
+    'com.google.android.material:material:1.0.0'
 }
