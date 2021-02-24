@@ -12,6 +12,7 @@ import com.blogspot.yourfavoritekaisar.pangansehat.R
 import com.google.firebase.auth.FirebaseAuth
 import com.rengwuxian.materialedittext.MaterialEditText
 import kotlinx.android.synthetic.main.activity_login.*
+import kotlinx.android.synthetic.main.activity_sign_up.*
 import kotlinx.android.synthetic.main.activity_sign_up.edt_email
 import kotlinx.android.synthetic.main.activity_sign_up.edt_password
 
@@ -39,7 +40,7 @@ class LoginActivity : AppCompatActivity() {
             onLogin()
         }
 
-        txt_singup.setOnClickListener {
+        btn_signup.setOnClickListener {
             onSingUp()
         }
     }

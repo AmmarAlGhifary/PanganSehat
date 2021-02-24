@@ -102,7 +102,7 @@
                     android:layout_height="58dp"
                     android:layout_marginTop="14dp"
                     android:backgroundTint="#1DC879"
-                    style="@style/TextAppearance.MaterialComponents.Button"
+                    app:cornerRadius="20dp"
                     android:text="@string/sign_up"
                     android:textAllCaps="false"
                     android:textColor="@color/white"
