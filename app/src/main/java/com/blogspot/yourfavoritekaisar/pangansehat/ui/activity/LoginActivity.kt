@@ -40,7 +40,7 @@ class LoginActivity : AppCompatActivity() {
             onLogin()
         }
 
-        btn_signup.setOnClickListener {
+        txt_singup.setOnClickListener {
             onSingUp()
         }
     }
