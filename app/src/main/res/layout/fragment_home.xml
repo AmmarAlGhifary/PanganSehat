@@ -142,6 +142,6 @@
             android:scaleType="fitXY"/>
     </androidx.cardview.widget.CardView>
 
-    
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
