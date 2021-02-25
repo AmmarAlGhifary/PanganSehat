@@ -19,6 +19,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 class MainActivity : AppCompatActivity() {
 
     lateinit var navController: NavController
+
     private var backPressedOnce = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,7 +31,6 @@ class MainActivity : AppCompatActivity() {
 
         moveToFragment(HomeFragment())
     }
-
 
     private val onNavigationItemSelectedListener =
         BottomNavigationView.OnNavigationItemSelectedListener { item ->
@@ -67,10 +67,9 @@ class MainActivity : AppCompatActivity() {
                 super.onBackPressed()
                 return
             }
-
+            
             backPressedOnce = true
             Toast.makeText(this, "Press BACK again to exit", Toast.LENGTH_SHORT).show()
-
             Handler().postDelayed(2000) {
                 backPressedOnce = false
             }
