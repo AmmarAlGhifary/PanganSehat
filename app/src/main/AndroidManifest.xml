@@ -30,7 +30,6 @@
         <activity
             android:name=".ui.activity.MainActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/SingUpNoActionBar"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".ui.activity.LoginActivity"
