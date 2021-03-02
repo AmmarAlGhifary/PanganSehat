@@ -24,6 +24,11 @@
     <string name="balance">Balance</string>
     <string name="settings">Settings</string>
     <string name="top_up">Top Up</string>
+    <string name="gluten_free_bread">Gluten Free Bread</string>
+    <string name="_0_0">0.0</string>
+    <string name="gluten_free">gluten-free</string>
+    <string name="rp100_000">Rp100.000</string>
+    <string name="recommmendations">Recommmendations</string>
 
     <string-array name="locations">
         <item>Jakarta Selatan</item>
